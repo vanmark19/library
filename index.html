@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src = "main.js"></script>
+  <title>Library</title>
+</head>
+<body>
+  <div class="upper-part">
+    <header><div>My library</div></header>
+  <main>
+    <div class = 'book'>
+      <div class="top"></div>
+      <div class="book-content">
+        <div class="title">Title</div>
+        <div>by,</div>
+        <div class="author">Author</div>
+        <button class="remove">Remove</button>
+        <button class="read">Read</button>  
+      </div>
+    </div>
+ 
+  </main> 
+  </div>
+
+  <div class="form-wraper form-wraper-hidden" id = 'form'>
+    <form>
+      <button class = close id = 'close-button'>X</button>
+      <div class="form-header">Add a new book</div>
+      <div class="form-main">
+        <div class="form-title">
+          <label for="title">Title</label>
+          <input type="text" id = 'title' placeholder="The prince and the pauper" name = 'title' required>
+        </div>
+        <div class="form-author">
+          <label for="author">Author</label>
+          <input type="text" name = 'author' id = 'author' placeholder="Mark Twain" required>
+        </div>
+        <div class="read">
+          <label for="read">I read it</label>
+          <input type="checkbox" name = 'read' id = 'read'>
+        </div>
+      </div>
+      <div class = 'button-wraper'>
+        <button type="submit">Submit</button>
+      </div>
+
+    </form>
+  </div>
+  
+  
+  <div class = 'bottom-text' id = "new-book">+ Add a new book</div>
+</body>
+</html>
